@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMeter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-deep-teal text-off-white">
+    <header class="text-center py-4">
+        <img src="images/icon.png" alt="EcoMeter Logo" class="w-16 h-16 mx-auto">
+        <h1 class="text-2xl font-bold mt-2">EcoMeter</h1>
+    </header>
+
+    <main class="px-4">
+        <button id="analyze-btn" class="w-full bg-mint-green text-deep-teal font-bold py-2 px-4 rounded mb-4 hover:bg-soft-orange transition-colors">
+            Analyze Product
+        </button>
+
+        <section id="product-summary" class="bg-teal-dark rounded-lg p-4 mb-4">
+            <!-- Product details will be inserted here -->
+        </section>
+
+        <section id="eco-score" class="bg-teal-dark rounded-lg p-4 mb-4">
+            <!-- Eco-score meter will be inserted here -->
+        </section>
+
+        <section id="materials" class="bg-teal-dark rounded-lg p-4 mb-4">
+            <h3 class="text-md font-semibold mb-2">Materials</h3>
+            <div class="chart-container">
+                <canvas id="materials-chart"></canvas>
+            </div>
+        </section>
+
+        <section id="carbon-footprint" class="bg-teal-dark rounded-lg p-4 mb-4">
+            <!-- Carbon footprint info will be inserted here -->
+        </section>
+
+        <section id="recycling" class="bg-teal-dark rounded-lg p-4 mb-4">
+            <!-- Recycling info will be inserted here -->
+        </section>
+
+        <section id="alternatives" class="bg-teal-dark rounded-lg p-4 mb-4">
+            <!-- Alternatives will be inserted here -->
+        </section>
+    </main>
+
+    <footer class="text-center py-4 text-sm">
+        <p>EcoMeter - Making sustainable choices easier</p>
+        <button id="about-btn" class="text-mint-green hover:text-soft-orange transition-colors">About</button>
+        <button id="tips-btn" class="text-mint-green hover:text-soft-orange transition-colors ml-4">Eco Tips</button>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+</html>

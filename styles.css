@@ -1,0 +1,46 @@
+@import 'https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css';
+
+:root {
+  --deep-teal: #004D40;
+  --teal-dark: #00695C;
+  --mint-green: #4DB6AC;
+  --soft-orange: #FFB74D;
+  --off-white: #E0F2F1;
+}
+
+body {
+  width: 400px;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--deep-teal);
+  color: var(--off-white);
+}
+
+.bg-deep-teal { background-color: var(--deep-teal); }
+.bg-teal-dark { background-color: var(--teal-dark); }
+.text-mint-green { color: var(--mint-green); }
+.text-soft-orange { color: var(--soft-orange); }
+.text-off-white { color: var(--off-white); }
+
+.eco-meter {
+  width: 200px;
+  height: 100px;
+  background: conic-gradient(var(--soft-orange) 0deg, var(--mint-green) 180deg, var(--off-white) 180deg);
+  border-radius: 100px 100px 0 0;
+  margin: 20px auto;
+}
+
+.eco-meter::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 100px;
+  background-color: var(--deep-teal);
+  margin-left: 90px;
+  transform-origin: bottom;
+  transform: rotate(calc(var(--score) * 1.8deg));
+  transition: transform 1s ease-out;
+}
+
+.chart-container {
+  height: 200px;
+}
