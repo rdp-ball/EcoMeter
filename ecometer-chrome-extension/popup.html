@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcoMeter Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 10px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 18px;
+            color: #333;
+        }
+        .container {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            margin: 5px 0;
+            color: #555;
+        }
+        strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EcoMeter Data</h1>
+        <p><strong>Category:</strong> <span id="category">Loading...</span></p>
+        <p><strong>Weight:</strong> <span id="weight">Loading...</span></p>
+        <p><strong>Screen Size:</strong> <span id="screenSize">Loading...</span></p>
+        <p><strong>Price:</strong> <span id="price">Loading...</span></p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
